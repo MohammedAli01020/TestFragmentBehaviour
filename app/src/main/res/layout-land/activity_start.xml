@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <fragment
+        android:id="@+id/master_list_fragment"
+        android:name="com.example.mohamed.testfragmentbehaviour.ui.MasterListFragment"
+        android:layout_width="350dp"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/android_me_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/head_container"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside" />
+
+            <!-- The remaining containers for the body and leg BodyPartFragments -->
+            <FrameLayout
+                android:id="@+id/body_container"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside" />
+
+            <FrameLayout
+                android:id="@+id/leg_container"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
